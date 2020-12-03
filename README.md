@@ -18,17 +18,13 @@
 
 <img src="https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/IMG-1316.gif" alt="drawing" width="200"/>
 
-![](https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/IMG-1316.gif =200x400)
-
 MasterDesk - экран со списком зарегистрированных карт и быстрым доступом до основной информации
 
 <img src="https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen3.jpeg" alt="drawing" width="200"/>
 
-![](https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen3.jpeg =250x500)
-
 FullInfo - экран с дополнительной детальной инфомацией карточки
 
-![](https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen1.jpeg =250x500)
+<img src="https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen1.jpeg" alt="drawing" width="200"/>
 
 ## Дизайн
 
@@ -40,14 +36,13 @@ FullInfo - экран с дополнительной детальной инф�
 
 Главный экран приложения позволяет быстро найти наиболее использующеся карты и тут же отобразить наиболее необходимую информацию такую как шрихкод или количество балов
 
-![](https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen2.jpeg =200x)
-
+<img src="https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen2.jpeg" alt="drawing" width="200"/>
 
 ### Карусель из карт под одну свободную руку
 
 Изначальная мысль заключалась в том, что пользователи могут иметь необходимость использовать приложения имея только одну свободную руку. Дизайн приложения позволяет получать доступ до важного штрих кода используя только праую нижнию часть главного экрана
 
-![](https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/IMG-1315.gif =150x)
+<img src="https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/IMG-1315.gif" alt="drawing" width="200"/>
 
 ### Цветовые акценты
 
