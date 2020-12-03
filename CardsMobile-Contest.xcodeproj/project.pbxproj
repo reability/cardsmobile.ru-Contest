@@ -38,6 +38,7 @@
 		2D049225257904E900E1831F /* CardInfoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D049224257904E900E1831F /* CardInfoStatus.swift */; };
 		2D049228257904FB00E1831F /* CardInfoStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D049227257904FB00E1831F /* CardInfoStatusTableViewCell.swift */; };
 		2D04922B2579051200E1831F /* CardInfoStatusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D04922A2579051200E1831F /* CardInfoStatusTableViewCell.xib */; };
+		2D0492332579378800E1831F /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0492322579378800E1831F /* ViewState.swift */; };
 		2D1C50D5256846B5009303CA /* CarouselCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C50D4256846B5009303CA /* CarouselCardItem.swift */; };
 		2D1C50D92568476C009303CA /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C50D82568476C009303CA /* UITableView+Ext.swift */; };
 		2D1C50DC25695A3D009303CA /* CardShelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C50DB25695A3D009303CA /* CardShelf.swift */; };
@@ -98,6 +99,7 @@
 		2D049224257904E900E1831F /* CardInfoStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoStatus.swift; sourceTree = "<group>"; };
 		2D049227257904FB00E1831F /* CardInfoStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoStatusTableViewCell.swift; sourceTree = "<group>"; };
 		2D04922A2579051200E1831F /* CardInfoStatusTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardInfoStatusTableViewCell.xib; sourceTree = "<group>"; };
+		2D0492322579378800E1831F /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		2D1C50D4256846B5009303CA /* CarouselCardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCardItem.swift; sourceTree = "<group>"; };
 		2D1C50D82568476C009303CA /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		2D1C50DB25695A3D009303CA /* CardShelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardShelf.swift; sourceTree = "<group>"; };
@@ -519,6 +521,7 @@
 		2DBFF9E025608713006CAE6C /* ViewState */ = {
 			isa = PBXGroup;
 			children = (
+				2D0492322579378800E1831F /* ViewState.swift */,
 			);
 			path = ViewState;
 			sourceTree = "<group>";
@@ -702,6 +705,7 @@
 				2D0491A325731AEB00E1831F /* FullinfoInteractor.swift in Sources */,
 				2D0491C32574175300E1831F /* CardInfoImageTableViewCell.swift in Sources */,
 				2DBFF9BE256017BE006CAE6C /* FieldModel.swift in Sources */,
+				2D0492332579378800E1831F /* ViewState.swift in Sources */,
 				2D8941C62565B22600779A9E /* CardCarouselLayout.swift in Sources */,
 				2D8941B525657AB400779A9E /* MasterDeskBuilder.swift in Sources */,
 				2D0491CA25741FE200E1831F /* CardInfoCode.swift in Sources */,

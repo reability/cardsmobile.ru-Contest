@@ -11,9 +11,13 @@ protocol FullInfoViewProtocol: class {
     func reloadData(with model: [FiledModel])
 }
 
+// MARK: - Implementation
+
 final class FullInfoViewController: BaseTableViewController, FullInfoViewProtocol {
     
     var presenter: FullInfoPresenter!
+    
+    // MARK: - View state
     
     override func viewDidLoad() {
         super.viewDidLoad()

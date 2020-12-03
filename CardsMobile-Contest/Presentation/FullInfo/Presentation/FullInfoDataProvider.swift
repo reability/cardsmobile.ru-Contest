@@ -2,32 +2,40 @@
 //  FullInfoDataProvider.swift
 //  CardsMobile-Contest
 //
-//  Created by Ванурин Алексей Максимович on 30.11.2020.
-//
-
-import Foundation
+//  Created by Ванурин Алексей Максимович
 
 protocol FullInfoDataProvider {
     func getRows(for index: Int) -> [FiledModel]
 }
 
-final class FullInfoDataProviderImp: FullInfoDataProvider {
+// MARK: - Implementation
+
+struct FullInfoDataProviderImp {}
+
+// MARK: - For Presenter
+
+extension FullInfoDataProviderImp: FullInfoDataProvider {
     
     func getRows(for index: Int) -> [FiledModel] {
         
         switch index {
         case 0:
-            return _index0()
+            return _index0
         case 1:
-            return _index1()
+            return _index1
         case 2:
-            return _index2()
+            return _index2
         default:
-            fatalError()
+            debugPrint("Отсвующий индекс")
+            fatalError("Not implemented")
         }
     }
+}
+/// Костыль. Здесь просто лежат готовые модели. Следует формировать модель на основе данных с бекенда
+
+private extension FullInfoDataProviderImp {
     
-    private func _index0() -> [FiledModel] {
+    var _index0: [FiledModel] {
         return [
             Space(size: 10),
             CardInfoHeader(title: "Вкус Гаражей", description: "Дисконтная карта"),
@@ -50,7 +58,7 @@ final class FullInfoDataProviderImp: FullInfoDataProvider {
         ]
     }
     
-    private func _index1() -> [FiledModel] {
+    var _index1: [FiledModel] {
         return [
             Space(size: 10),
             CardInfoHeader(title: "Маникюр Нади", description: "Дисконтная карта"),
@@ -63,7 +71,7 @@ final class FullInfoDataProviderImp: FullInfoDataProvider {
         ]
     }
     
-    private func _index2() -> [FiledModel] {
+    var  _index2: [FiledModel] {
         return [
             Space(size: 10),
             CardInfoHeader(title: "Уткохвост", description: "Клубная карта"),

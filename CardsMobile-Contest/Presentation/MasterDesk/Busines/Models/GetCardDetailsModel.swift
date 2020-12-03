@@ -2,11 +2,9 @@
 //  GetCardDetailsModel.swift
 //  CardsMobile-Contest
 //
-//  Created by Ванурин Алексей Максимович on 15.11.2020.
-//
+//  Created by Ванурин Алексей Максимович
 
-import Foundation
-import UIKit
+import UIKit.UIColor
 
 struct GetCardDetailsModel {
     

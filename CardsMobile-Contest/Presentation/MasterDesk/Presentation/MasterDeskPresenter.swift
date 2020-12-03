@@ -2,13 +2,11 @@
 //  MasterDeskPresenter.swift
 //  CardsMobile-Contest
 //
-//  Created by Ванурин Алексей Максимович on 15.11.2020.
-//
+//  Created by Ванурин Алексей Максимович
 
-import Foundation
+// MARK: - Protocols
 
-protocol MasterDeskPresenter: CardShelfDelegate, FormSourceActionDelegate {
-    func viewDidLoad()
+protocol MasterDeskPresenter: CardShelfDelegate, FormSourceActionDelegate, ViewState {
 }
 
 protocol MasterDeskPresenterInput: class {
@@ -19,6 +17,8 @@ protocol MasterDeskPresenterInput: class {
 protocol MasterDeskPresenterOutput: class {
     func fetchCards()
 }
+
+// MARK: - Implementation
 
 final class MasterDeskPresenterImp {
     
@@ -32,12 +32,20 @@ final class MasterDeskPresenterImp {
     
 }
 
+// MARK: - API for View
+
 extension MasterDeskPresenterImp: MasterDeskPresenter {
+    
+    // MARK: - ViewState
     
     func viewDidLoad() {
         interactor.fetchCards()
         //view.reloadData(with: dataProvider.getRows(for: [], selectedIndex: 0))
     }
+    
+    // MARK: - DataSourceDelegate
+    
+    /// Прокрутка карусели
     
     func didSelectedCard(with index: Int) {
         currentIndex = index
@@ -46,9 +54,20 @@ extension MasterDeskPresenterImp: MasterDeskPresenter {
         view.setUpNavigation(with: color)
     }
     
-	
+    /// Нажите на ячейку
     
+    func didTaped(on model: FiledModel) {
+        switch model {
+        /// Ячейка с деталями сверху
+        case is CardDetails:
+            view.openDeatilsModule(with: currentIndex)
+        default:
+            break
+        }
+    }
 }
+
+// MARK: - From Interactor
 
 extension MasterDeskPresenterImp: MasterDeskPresenterInput {
     
@@ -64,7 +83,7 @@ extension MasterDeskPresenterImp: MasterDeskPresenterInput {
     }
     
     func failedInitialLoad() {
-        //#warning("No imp")
+        #warning("No imp")
     }
     
     

@@ -2,10 +2,9 @@
 //  FullinfoBuilder.swift
 //  CardsMobile-Contest
 //
-//  Created by Ванурин Алексей Максимович on 29.11.2020.
-//
+//  Created by Ванурин Алексей Максимович
 
-import UIKit
+import UIKit.UIViewController
 
 struct FullInfoInput {
     let selectedIndex: Int

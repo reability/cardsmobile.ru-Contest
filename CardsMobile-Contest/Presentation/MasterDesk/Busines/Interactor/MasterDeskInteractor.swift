@@ -2,20 +2,21 @@
 //  MasterDeskInteractor.swift
 //  CardsMobile-Contest
 //
-//  Created by Ванурин Алексей Максимович on 15.11.2020.
-//
-
-import Foundation
+//  Created by Ванурин Алексей Максимович
 
 final class MasterDeskInteractor {
     
-    weak var output: MasterDeskPresenterInput?
+    unowned var output: MasterDeskPresenterInput!
+    // var service: Service<Cards>
     
 }
+
+// MARK: - From Presenter
 
 extension MasterDeskInteractor: MasterDeskPresenterOutput {
     
     func fetchCards() {
+        #warning("Mocked")
         let mocked: [GetCardDetailsModel] = [
             GetCardDetailsModel(title: "ВкусГаражей", code: "8957371839567", info: "Оплачивайте покупки с помощью дисконтной карты и накапливайте была. Обменивайте на скидки в 1р каждые 10 баллов на дисконтной карте", status: true, amount: 200, colorSheme: .init(mainColor: .green, complementaryColor: .white)),
             GetCardDetailsModel(title: "Маникюр Нади", code: "2675303180285", info: "Получайте скидки", status: true, amount: nil, colorSheme: .init(mainColor: .black, complementaryColor: .white)),

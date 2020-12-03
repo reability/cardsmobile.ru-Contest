@@ -13,6 +13,8 @@ protocol MasterDeskViewProtocol: class {
     func setUpNavigation(with sheme: ColorSheme)
 }
 
+// MARK: - Implementation
+
 final class MasterDeskViewController: BaseTableViewController {
     
     var presenter: MasterDeskPresenter!

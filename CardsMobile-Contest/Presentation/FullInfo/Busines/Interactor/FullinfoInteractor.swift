@@ -2,8 +2,7 @@
 //  FullinfoInteractor.swift
 //  CardsMobile-Contest
 //
-//  Created by Ванурин Алексей Максимович on 29.11.2020.
-//
+//  Created by Ванурин Алексей Максимович
 
 import Foundation
 
@@ -11,11 +10,19 @@ protocol FullinfoInteractor {
     func fetch()
 }
 
-final class FullinfoInteractorImp: FullinfoInteractor  {
+// MARK: - From Presenter
+
+final class FullinfoInteractorImp  {
     
-    weak var output: FullInfoPresenterInput?
+    unowned var output: FullInfoPresenterInput!
+    // var service: Service<Card>
+    
+}
+
+extension FullinfoInteractorImp: FullinfoInteractor {
     
     func fetch() {
+        #warning("No implementation")
         output?.didSucceded()
     }
     

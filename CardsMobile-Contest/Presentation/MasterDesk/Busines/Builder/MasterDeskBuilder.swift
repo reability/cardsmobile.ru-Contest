@@ -2,8 +2,7 @@
 //  MasterDeskBuilder.swift
 //  CardsMobile-Contest
 //
-//  Created by Ванурин Алексей Максимович on 18.11.2020.
-//
+//  Created by Ванурин Алексей Максимович
 
 import UIKit
 
