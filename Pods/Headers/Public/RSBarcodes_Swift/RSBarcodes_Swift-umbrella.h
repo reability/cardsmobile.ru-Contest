@@ -1,0 +1,1 @@
+../../../Target Support Files/RSBarcodes_Swift/RSBarcodes_Swift-umbrella.h

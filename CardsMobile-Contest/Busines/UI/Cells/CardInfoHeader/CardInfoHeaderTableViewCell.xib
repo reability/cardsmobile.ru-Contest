@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="220" id="FkR-ZP-8mw" customClass="CardInfoHeaderTableViewCell" customModule="CardsMobile_Contest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FkR-ZP-8mw" id="hrk-CR-gDO">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spq-wz-6DC">
+                        <rect key="frame" x="8" y="10" width="398" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVj-wk-utu">
+                        <rect key="frame" x="8" y="46" width="398" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxv-1e-Lpu">
+                        <rect key="frame" x="0.0" y="2" width="414" height="1"/>
+                        <color key="backgroundColor" systemColor="separatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="GA1-ve-uBv"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJh-mB-a7G">
+                        <rect key="frame" x="0.0" y="217" width="414" height="1"/>
+                        <color key="backgroundColor" systemColor="separatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="uf8-YP-Q6M"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hxv-1e-Lpu" secondAttribute="trailing" id="FTy-Vz-Oa0"/>
+                    <constraint firstAttribute="bottom" secondItem="zJh-mB-a7G" secondAttribute="bottom" constant="2" id="FZf-q5-R1D"/>
+                    <constraint firstAttribute="trailing" secondItem="OVj-wk-utu" secondAttribute="trailing" constant="8" id="FdZ-Al-npb"/>
+                    <constraint firstAttribute="trailing" secondItem="Spq-wz-6DC" secondAttribute="trailing" constant="8" id="Hd2-Nw-Tsx"/>
+                    <constraint firstItem="hxv-1e-Lpu" firstAttribute="top" secondItem="hrk-CR-gDO" secondAttribute="top" constant="2" id="Vb3-we-Iw5"/>
+                    <constraint firstItem="Spq-wz-6DC" firstAttribute="top" secondItem="hrk-CR-gDO" secondAttribute="top" constant="10" id="Vzm-cU-6iO"/>
+                    <constraint firstItem="hxv-1e-Lpu" firstAttribute="leading" secondItem="hrk-CR-gDO" secondAttribute="leading" id="WyU-w4-vPl"/>
+                    <constraint firstItem="OVj-wk-utu" firstAttribute="leading" secondItem="hrk-CR-gDO" secondAttribute="leading" constant="8" id="ZNp-k6-Dpw"/>
+                    <constraint firstItem="zJh-mB-a7G" firstAttribute="leading" secondItem="hrk-CR-gDO" secondAttribute="leading" id="h6c-Sk-tuk"/>
+                    <constraint firstItem="OVj-wk-utu" firstAttribute="top" secondItem="Spq-wz-6DC" secondAttribute="bottom" constant="15" id="oy8-gS-5j1"/>
+                    <constraint firstAttribute="trailing" secondItem="zJh-mB-a7G" secondAttribute="trailing" id="ppK-GZ-NcB"/>
+                    <constraint firstItem="Spq-wz-6DC" firstAttribute="leading" secondItem="hrk-CR-gDO" secondAttribute="leading" constant="8" id="vqw-Xx-YQJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MainTitleLabel" destination="Spq-wz-6DC" id="rEd-mT-ccI"/>
+                <outlet property="subTitleLabel" destination="OVj-wk-utu" id="uPe-U6-6Sq"/>
+            </connections>
+            <point key="canvasLocation" x="-207.24637681159422" y="90.401785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

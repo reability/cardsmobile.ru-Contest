@@ -1,0 +1,6 @@
+module Pods_CardsMobile_Contest {
+  umbrella header "Pods-CardsMobile-Contest-umbrella.h"
+
+  export *
+  module * { export * }
+}

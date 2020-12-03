@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="393" id="inu-xQ-8Gq" customClass="CardDetailtViewCell" customModule="CardsMobile_Contest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="393"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="inu-xQ-8Gq" id="WlA-Iq-foX">
+                <rect key="frame" x="0.0" y="0.0" width="447" height="393"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название карточки" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bu0-ZO-caI">
+                        <rect key="frame" x="56" y="10" width="191.5" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBo-39-4Ck">
+                        <rect key="frame" x="20" y="86" width="407" height="107"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZm-mb-Jg4">
+                        <rect key="frame" x="20" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="NsS-p2-ug1"/>
+                            <constraint firstAttribute="height" constant="20" id="kV2-s5-PvU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNp-mo-Suc">
+                        <rect key="frame" x="375.5" y="10" width="51.5" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tg-Vl-pyJ">
+                        <rect key="frame" x="8" y="63.5" width="431" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aup-U6-SnO">
+                        <rect key="frame" x="30" y="198" width="387" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Aup-U6-SnO" secondAttribute="trailing" constant="30" id="DX9-nf-4iV"/>
+                    <constraint firstItem="MZm-mb-Jg4" firstAttribute="leading" secondItem="WlA-Iq-foX" secondAttribute="leading" constant="20" symbolic="YES" id="HKe-qB-nS9"/>
+                    <constraint firstItem="NBo-39-4Ck" firstAttribute="leading" secondItem="WlA-Iq-foX" secondAttribute="leading" constant="20" id="KKa-JZ-KFv"/>
+                    <constraint firstItem="bu0-ZO-caI" firstAttribute="leading" secondItem="MZm-mb-Jg4" secondAttribute="trailing" constant="16" id="LYU-2x-yt2"/>
+                    <constraint firstItem="bu0-ZO-caI" firstAttribute="top" secondItem="WlA-Iq-foX" secondAttribute="top" constant="10" id="M4N-Af-U1K"/>
+                    <constraint firstAttribute="trailing" secondItem="ZNp-mo-Suc" secondAttribute="trailing" constant="20" id="WSA-QK-ScB"/>
+                    <constraint firstItem="0tg-Vl-pyJ" firstAttribute="leading" secondItem="WlA-Iq-foX" secondAttribute="leading" constant="8" id="YT9-Ln-eXZ"/>
+                    <constraint firstItem="ZNp-mo-Suc" firstAttribute="top" secondItem="WlA-Iq-foX" secondAttribute="top" constant="10" id="b4n-1Y-Ds0"/>
+                    <constraint firstItem="Aup-U6-SnO" firstAttribute="top" secondItem="NBo-39-4Ck" secondAttribute="bottom" constant="5" id="bV0-aL-jBG"/>
+                    <constraint firstAttribute="bottom" secondItem="NBo-39-4Ck" secondAttribute="bottom" constant="200" id="gWW-Zn-n3S"/>
+                    <constraint firstAttribute="trailing" secondItem="NBo-39-4Ck" secondAttribute="trailing" constant="20" id="lfE-xo-eOs"/>
+                    <constraint firstItem="NBo-39-4Ck" firstAttribute="top" secondItem="bu0-ZO-caI" secondAttribute="bottom" constant="52" id="pi8-GG-Awj"/>
+                    <constraint firstItem="NBo-39-4Ck" firstAttribute="top" secondItem="0tg-Vl-pyJ" secondAttribute="bottom" constant="8" symbolic="YES" id="s5d-SH-4uL"/>
+                    <constraint firstItem="MZm-mb-Jg4" firstAttribute="top" secondItem="WlA-Iq-foX" secondAttribute="top" constant="10" id="ut8-QL-Ol8"/>
+                    <constraint firstAttribute="trailing" secondItem="0tg-Vl-pyJ" secondAttribute="trailing" constant="8" id="v8h-2A-grK"/>
+                    <constraint firstItem="Aup-U6-SnO" firstAttribute="leading" secondItem="WlA-Iq-foX" secondAttribute="leading" constant="30" id="z7C-sK-lb7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="barCodeHolderView" destination="NBo-39-4Ck" id="348-HF-wdv"/>
+                <outlet property="infoLabel" destination="Aup-U6-SnO" id="8nH-QH-yHb"/>
+                <outlet property="instructionsLabel" destination="0tg-Vl-pyJ" id="j2Q-h7-PkP"/>
+                <outlet property="logoImageView" destination="MZm-mb-Jg4" id="gRh-I9-46s"/>
+                <outlet property="mainTitleLabel" destination="bu0-ZO-caI" id="Lxi-kr-Grj"/>
+                <outlet property="pontsLabel" destination="ZNp-mo-Suc" id="BVY-bl-Tov"/>
+            </connections>
+            <point key="canvasLocation" x="164.49275362318841" y="159.04017857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
