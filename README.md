@@ -16,15 +16,15 @@
 
 Приложении состоит из двух модулей: MasterDesk и FullInfo
 
-(https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/IMG-1316.gif)
+!(https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/IMG-1316.gif)
 
 MasterDesk - экран со списком зарегистрированных карт и быстрым доступом до основной информации
 
-(https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen3.jpeg)
+!(https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen3.jpeg)
 
 FullInfo - экран с дополнительной детальной инфомацией карточки
 
-(https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen1.jpeg)
+![](https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen1.jpeg)
 
 ## Дизайн
 
