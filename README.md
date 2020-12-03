@@ -16,15 +16,15 @@
 
 Приложении состоит из двух модулей: MasterDesk и FullInfo
 
-https://github.com/reability/cardsmobile.ru-Conte
+(https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/IMG-1316.gif)
 
 MasterDesk - экран со списком зарегистрированных карт и быстрым доступом до основной информации
 
-https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen3.jpeg
+(https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen3.jpeg)
 
 FullInfo - экран с дополнительной детальной инфомацией карточки
 
-https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen1.jpeg
+(https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen1.jpeg)
 
 ## Дизайн
 
@@ -36,14 +36,14 @@ https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen1.jpeg
 
 Главный экран приложения позволяет быстро найти наиболее использующеся карты и тут же отобразить наиболее необходимую информацию такую как шрихкод или количество балов
 
-https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen2.jpeg
+(https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/screen2.jpeg)
 
 
 ### Карусель из карт под одну свободную руку
 
 Изначальная мысль заключалась в том, что пользователи могут иметь необходимость использовать приложения имея только одну свободную руку. Дизайн приложения позволяет получать доступ до важного штрих кода используя только праую нижнию часть главного экрана
 
-https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/IMG-1315.gif
+(https://github.com/reability/cardsmobile.ru-Contest/blob/main/Img/IMG-1315.gif)
 
 ### Цветовые акценты
 
