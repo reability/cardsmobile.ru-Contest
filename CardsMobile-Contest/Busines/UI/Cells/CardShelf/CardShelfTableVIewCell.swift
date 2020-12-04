@@ -43,8 +43,8 @@ final class CardShelfTableViewCell: UITableViewCell, Delegatable {
         let layout = CardCarouselLayout()
         
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: bounds.width/5, height: bounds.height)
-        print(layout.itemSize)
+        //layout.itemSize = CGSize(width: bounds.width, height: bounds.height)
+        layout.itemSize = CGSize(width: 200, height: 200.0)
         layout.footerReferenceSize = .zero
         layout.headerReferenceSize = .zero
         

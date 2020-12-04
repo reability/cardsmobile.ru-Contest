@@ -17,7 +17,7 @@ struct CardShelf: FiledModel {
     }
     
     var height: CGFloat {
-        return 250.0
+        return 300.0
     }
     
     

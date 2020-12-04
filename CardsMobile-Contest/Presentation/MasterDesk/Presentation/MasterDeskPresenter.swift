@@ -48,6 +48,7 @@ extension MasterDeskPresenterImp: MasterDeskPresenter {
     /// Прокрутка карусели
     
     func didSelectedCard(with index: Int) {
+        guard index != currentIndex else { return }
         currentIndex = index
         view.reloadData(with: dataProvider.getRows(for: cards, selectedIndex: currentIndex))
         let color = dataProvider.getNaviColor(for: cards, selectedIndex: currentIndex)

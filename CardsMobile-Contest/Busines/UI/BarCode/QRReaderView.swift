@@ -13,8 +13,28 @@ final class QRReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        /// Очень плохо так делать. Знаю. Тут вообще все плохо
+        
+        if captureSession == nil {
+            
+            DispatchQueue.global(qos: .background).async {
+                DispatchQueue.main.async {
+                    self.commomInit()
+                }
+            }
+        }
+        //layoutIfNeeded()
+    }
+    
     func commomInit() {
-        backgroundColor = UIColor.black
+        
+        self.clipsToBounds = true
+        self.layer.masksToBounds = false
+        
+        backgroundColor = UIColor.red
         
         captureSession = AVCaptureSession()
         
@@ -45,13 +65,14 @@ final class QRReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
             failed()
             return
         }
-
+        
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+        
         previewLayer.frame = layer.bounds
         previewLayer.videoGravity = .resizeAspectFill
         layer.addSublayer(previewLayer)
-
-        DispatchQueue.main.async {
+        
+        DispatchQueue.global(qos: .userInitiated).sync {
             self.captureSession.startRunning()
         }
     }

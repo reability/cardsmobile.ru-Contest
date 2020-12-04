@@ -30,7 +30,7 @@ extension MasterDeskDataProviderImp: MasterDeskDataProvider {
             rows.append(selectedCard.cardDetail())
         }
         
-        let carouselItems: [CarouselItem] = object.map({ CardShelfItem(title: $0.title, image: #imageLiteral(resourceName: "Снимок экрана 2020-11-23 в 02.07.54")) })
+        let carouselItems: [CarouselItem] = object.map({ CardShelfItem(title: $0.title, image: $0.image) })
         rows.append(CardShelf(cardTems: carouselItems))
         
         return rows

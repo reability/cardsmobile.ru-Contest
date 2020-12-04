@@ -15,6 +15,9 @@ struct GetCardDetailsModel {
     let status: Bool?
     let amount: Int?
     
+    let image: UIImage
+    let logo: UIImage
+    
     let colorSheme: GetCardDetailsModelColorSheme
     
 }
@@ -29,9 +32,9 @@ extension GetCardDetailsModel {
     func cardDetail() -> CardDetails {
         switch self.code {
         case "QR":
-            return .init(title: self.title, pointsObject: makePoints(for: self.amount), shortDescription: info, barcodeStyle: .QRScan, colorSheme: self.colorSheme)
+            return .init(title: self.title, logo: self.logo, pointsObject: makePoints(for: self.amount), shortDescription: info, barcodeStyle: .QRScan, colorSheme: self.colorSheme)
         default:
-            return .init(title: self.title, pointsObject: makePoints(for: self.amount), shortDescription: self.info, barcodeStyle: .barcode(code: self.code), colorSheme: self.colorSheme)
+            return .init(title: self.title, logo: self.logo, pointsObject: makePoints(for: self.amount), shortDescription: self.info, barcodeStyle: .barcode(code: self.code), colorSheme: self.colorSheme)
         }
     }
     

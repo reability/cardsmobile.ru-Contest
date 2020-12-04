@@ -15,7 +15,7 @@ enum CardDetailsBarCodeStyle {
 struct CardDetails: FiledModel {
     
     var title: String
-    
+    var logo: UIImage
     var pointsObject: CardDetailsPointsObject?
     
     var shortDescription: String?
@@ -34,8 +34,9 @@ extension CardDetails {
     }
     
     var height: CGFloat {
-        return 500.0
+        return (UIApplication.shared.keyWindow!.rootViewController?.view.bounds.height)! - 386.0
     }
+
     
 }
 

@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название карточки" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bu0-ZO-caI">
-                        <rect key="frame" x="56" y="10" width="191.5" height="24"/>
+                        <rect key="frame" x="76" y="10" width="191.5" height="24"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -28,10 +28,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZm-mb-Jg4">
-                        <rect key="frame" x="20" y="10" width="20" height="20"/>
+                        <rect key="frame" x="20" y="10" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="20" id="NsS-p2-ug1"/>
-                            <constraint firstAttribute="height" constant="20" id="kV2-s5-PvU"/>
+                            <constraint firstAttribute="width" constant="40" id="NsS-p2-ug1"/>
+                            <constraint firstAttribute="height" constant="40" id="kV2-s5-PvU"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNp-mo-Suc">

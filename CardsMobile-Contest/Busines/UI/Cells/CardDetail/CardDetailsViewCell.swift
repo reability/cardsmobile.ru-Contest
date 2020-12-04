@@ -26,6 +26,9 @@ final class CardDetailtViewCell: UITableViewCell {
         mainTitleLabel.text = model.title
         setUpBarCodeView(for: model.barcodeStyle)
         
+        logoImageView.image = model.logo
+        logoImageView.layer.cornerRadius = 20.0
+        
         if let points = model.pointsObject {
             pontsLabel.isHidden = false
             setUpPointsScore(with: points.value, and: points.name)
@@ -112,7 +115,6 @@ private extension CardDetailtViewCell {
             maker.top.equalToSuperview()
             maker.bottom.equalToSuperview()
         }
-        view.commomInit()
         QRView = view
     }
     
